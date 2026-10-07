@@ -44,12 +44,7 @@ async function launch($: Engine, command: string) {
 export const register: Register = on => {
   on('session.start', async ($, e, next) => {
     await $.command.register({ name: 'mods', description: 'Open the menu of your mods' })
-    const started = await next(e)
-    // Open the menu at every startup, without taking the keyboard, so the prompt stays ready.
-    // Not for headless runs (claude -p), which draw nothing. An unasked pane seats once the
-    // terminal is 144+ columns wide and waits below that.
-    if ((await $.session.surfaces()).length > 0) void $.ui.open({ id: PANE, title: 'Mods', closeOnEscape: true, rows: 16 })
-    return started
+    return next(e)
   })
 
   on('command.run', { command: 'mods' }, async $ => {
