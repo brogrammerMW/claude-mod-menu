@@ -2,6 +2,8 @@
 
 A **◆ mods** button in the lower-right corner of the Claude Code prompt footer. Click it to open a menu of every mod you have installed, then click one to start it.
 
+![The mods menu open in a Claude Code pane, with a card for each mod (flightdeck, mission, youtube) and its slash command](docs/screenshot.png)
+
 ## What it does
 
 - **Footer button.** The **◆ mods** button sits at the right end of the prompt footer, after Claude Code's own mode labels. It shows in every session; the menu itself only opens when you click it.
