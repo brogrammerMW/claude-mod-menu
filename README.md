@@ -5,6 +5,7 @@ A **◆ mods** button in the lower-right corner of the Claude Code prompt footer
 ## What it does
 
 - **Footer button.** The **◆ mods** button sits at the right end of the prompt footer, after Claude Code's own mode labels.
+- **Opens at startup.** The menu opens by itself when Claude Code starts, without taking the keyboard, so you can type straight away. Esc closes it. A pane that opens on its own needs a terminal at least 144 columns wide; below that it waits for room, and the footer button still works.
 - **`/mods`** opens the same menu from the prompt.
 - **Every mod, from any marketplace.** The menu lists each installed plugin that loads a hooks module, which is what makes a plugin a mod. Mods you install later appear automatically.
 - **One card per mod.** Each card shows the mod's name, its description and its slash commands. Click a command, or Tab to it and press Enter, to close the menu and run it.
